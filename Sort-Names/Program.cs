@@ -12,9 +12,10 @@ namespace SortNames
         public static void Main(string[] args)
         {
             try
-            {
-            //    var temp = new string[] { "C:\\temp\\jayjay.txt" };
-            //    args = temp;
+            {                
+                //check if args is null or empty
+                if (args == null || args.Length == 0)
+                    throw new Exception("File was missing. please provide the file. e.g. sort-names c:\\names.txt");
 
                 var cs = new ContactService();
 
@@ -26,6 +27,14 @@ namespace SortNames
 
                 //Sorting
                 var sortedcontacts = cs.Sort(contacts, x => x.LastName, x => x.FirstName);
+
+                //Wrting To Target
+                var targetFilename = Path.GetFileNameWithoutExtension(args[0]) + "-sorted.txt";
+                var targetFilePath = Path.GetDirectoryName(args[0]) + "\\" + targetFilename;
+
+                cs.WriteToFile(sortedcontacts, targetFilePath);
+
+                Console.WriteLine("Finished: created {0}", targetFilename);
 
             }
             catch (InvalidFileTypeException ex)
@@ -43,8 +52,7 @@ namespace SortNames
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-            Console.ReadKey();
+            }            
         }
     }
 }

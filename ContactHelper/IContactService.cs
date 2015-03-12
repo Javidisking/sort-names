@@ -11,5 +11,6 @@ namespace ContactHelper
         List<Contact> ReadFile(string filepath);
         void DisplayContacts(List<Contact> contacts);
         List<Contact> Sort(List<Contact> contacts, Func<Contact, string> orderBySelector, Func<Contact, string> thenSelector);
+        void WriteToFile(List<Contact> contacts, string filepath);
     }
 }

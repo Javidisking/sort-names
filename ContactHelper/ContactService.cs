@@ -44,5 +44,16 @@ namespace ContactHelper
         {
             return contacts != null ? contacts.OrderBy(orderBySelector).ThenBy(thenSelector).ToList() : null;
         }
+
+        public void WriteToFile(List<Contact> contacts, string filepath)
+        {
+            using (var streamwriter = new StreamWriter(filepath))
+            {
+                foreach (var contact in contacts)
+                {
+                    streamwriter.WriteLine(contact);
+                }
+            }
+        }
     }            
 }

@@ -10,7 +10,7 @@ namespace ContactHelper
         {
             //check if given filepath is null or empty
             if (filepath == null || filepath.Length == 0)
-                throw new Exception("File was missing. please provide the file. e.g. sort-names c:\names.txt");
+                throw new Exception("File was missing. please provide the file. e.g. sort-names c:\\names.txt");
 
             //check if given filepath has an invalid character
             if (filepath.IndexOfAny(Path.GetInvalidPathChars()) > -1)

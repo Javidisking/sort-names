@@ -1,0 +1,13 @@
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\Sort-Names.exe.config
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\InputFiles\filewithoutcomma.txt
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\InputFiles\FileWithTwoCommas.txt
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\InputFiles\names.txt
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\InputFiles\names.txtnames-sorted.txt
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\InputFiles\names.xlsx
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\Sort-Names.exe
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\Sort-Names.pdb
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\ContactHelper.dll
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\bin\Release\ContactHelper.pdb
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\obj\Release\Sort-Names.csprojResolveAssemblyReference.cache
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\obj\Release\Sort-Names.exe
+C:\Users\Javid\SkyDrive\Development\SortNames\Sort-Names\obj\Release\Sort-Names.pdb
