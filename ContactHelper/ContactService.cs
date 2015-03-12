@@ -39,5 +39,10 @@ namespace ContactHelper
                 Console.WriteLine(contact);
             }
         }
+      
+        public List<Contact> Sort(List<Contact> contacts, Func<Contact, string> orderBySelector, Func<Contact, string> thenSelector)
+        {
+            return contacts != null ? contacts.OrderBy(orderBySelector).ThenBy(thenSelector).ToList() : null;
+        }
     }            
 }

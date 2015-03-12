@@ -13,6 +13,9 @@ namespace SortNames
         {
             try
             {
+            //    var temp = new string[] { "C:\\temp\\jayjay.txt" };
+            //    args = temp;
+
                 var cs = new ContactService();
 
                 //Reading Source                
@@ -21,9 +24,19 @@ namespace SortNames
                 //Displaying
                 cs.DisplayContacts(contacts);
 
-                
+                //Sorting
+                var sortedcontacts = cs.Sort(contacts, x => x.LastName, x => x.FirstName);
+
             }
             catch (InvalidFileTypeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (InvalidFileFormatException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (InvalidPathException ex)
             {
                 Console.WriteLine(ex.Message);
             }
